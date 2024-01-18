@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ForYourinformation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="logo">
+                <h2>ForYourinformation</h2>
+            </div>
+            <div class="links">
+                <a href="login.html" class="mainlink">Login</a>
+                <a href="#">Help</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <!-- LANDING PAGE -->
+
+        <div class="landing">
+            <div class="landingText" data-aos="fade-up" data-aos-duration="1000">
+                <h1>First,<span style="color:#e0501b;font-size: 4vw"> Find your Information</span> </h1>
+                <h3>Lets find your Information to make your  <br> Help stop the spread.</h3>
+                <br>
+                <div class="btn" >
+                    <a href="#" ></a>
+                    <button class="transparent-button"  onclick="toggleForm()"> <b> Book An Appointment</b> </button>
+                </div>
+            </div>
+            <div class="landingImage" data-aos="fade-down" data-aos-duration="2000">
+                <img src="img/bg.png" alt="">
+            </div>
+        </div>
+
+
+
+        <div >
+            <div id="myForm"    style="padding: 40px 40px">
+                <h3 >Book Appointment</h3>
+                <form action="insert.php"  method="post">
+                <div  style="margin-top: 40px">
+                    <div ><label class="h6">Name *</label>
+                        <div class="form-group" style="margin-top: 10px"><input name="name" class="form-control" type="text"
+                                placeholder="Full Name * "></input></div>
+                    </div>
+                    <div class="form-group" style="margin-top: 10px"><label class="h6">Email address *</label>
+                        <div  class="form-group" style="margin-top: 10px"><input required name="email" class="form-control" type="text"
+                                placeholder="example@gmail.com  "></input></div>
+                    </div>
+                    <div class="form-group" style="margin-top: 10px"><label class="h6">Departement *</label>
+                        <div class="form-group" style="margin-top: 10px">
+                            <select name="department" class="custom-select form-control" style="margin-top: 10px">
+                                <option>Please Select</option><svg width="8" height="14" viewBox="0 0 8 14"
+                                    fill="none" >
+                                    <path d="M 0 12 L 5 7 L 0 2 L 1 0 L 8 7 L 1 14 L 0 12 Z"
+                                        fill="rgb(115, 115, 115)" />
+                                </svg>
+                                <option>Cardiology</option>
+                                <option>Gynocology</option>
+                                <option>Gastroenterology</option>
+                                <option>Physician</option>
+                                <option>Microbiology</option>
+                            </select></div>
+                    </div>
+                    <div class="form-group" style="margin-top: 10px"><label class="h6">Time *</label>
+                        <div class="form-group" style="margin-top: 10px">
+                            <select name="time" class="custom-select form-control">
+                                <option>Available</option><svg width="8" height="14" viewBox="0 0 8 14"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 0 12 L 5 7 L 0 2 L 1 0 L 8 7 L 1 14 L 0 12 Z"
+                                        fill="rgb(115, 115, 115)" />
+                                </svg>
+                                <option>9:00 AM</option>
+                                <option>12:00 PM</option>
+                                <option>3:00 PM</option>
+                                <option>6:00 PM</option>
+                                <option>9: 00 PM</option>
+                            </select></div>
+                    </div> <br>
+                <div>
+                    <label for="appointment_date">Appointment Date:</label>
+
+                    <div>
+                        
+                        <input type="date" id="appointment_date" name="appointment_date" 
+                        min="2023-05-03" required>
+
+
+                    </div>                    
+                </div>
+
+
+                </div>
+                          <button class="show-form" onclick="toggleForm()" style="margin-top: 40px"><span>Book
+                                  Appointment</span></button>
+                    </form>             
+                </div>
+            </div>
+
+
+
+
+
+        <!-- ABOUT SECTION -->
+
+        <div class="about">
+            <div class="aboutText" data-aos="fade-up" data-aos-duration="1000">
+                <h1>Why Your healthy is important <br> <span style="color:#2f8be0;font-size:3vw">You Sick ?</span> </h1>
+                <img src="img/doctor-woman-400px.png" alt="">
+            </div>
+            <div class="aboutList" data-aos="fade-left" data-aos-duration="1000">
+                <ol>
+                    <li> 
+                        <span>01</span>
+                         <p>First, make sure your heart in a normal situation.</p>
+                    </li>
+                    <li> 
+                        <span>02</span>
+                         <p>Second, is if you want to be healthy person you can eat more vegetable.</p>
+                    </li>
+                    <li> 
+                        <span>03</span>
+                         <p>Third, if you has condition when you feel like sick you can a find dostor at your domisili.</p>
+                    </li>
+                    <li> 
+                        <span>04</span>
+                         <p>Fourth and the last one is, if you has sickness illness you can ask your doctor.</p>
+                    </li>
+
+                </ol>
+            </div>
+        </div>
+
+        <!-- INFO SECTION -->
+
+        <div class="infoSection">
+            <div class="infoHeader" data-aos="fade-up" data-aos-duration="1000">
+                <h1>Things you could do for your healthy <br> <span style="color:#e0501b">Healthy Care.</span> </h1>
+            </div>
+            <div class="infoCards">
+                <div class="card one" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="img/movie.png" class="cardoneImg" alt="" data-aos="fade-up" data-aos-duration="1100">
+                    <div class="cardbgone"></div>
+                    <div class="cardContent">
+                        <h2>Find a Doctor</h2>
+                        <p>Locate the right care provider for you !</p>
+                        <a href="#">
+                            <div class="cardBtn">
+                                <img src="img/next.png" alt="" class="cardIcon">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card two" data-aos="fade-up" data-aos-duration="1300">
+                    <img src="img/learn.png" class="cardtwoImg" alt="" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="cardbgtwo"></div>
+                    <div class="cardContent">
+                        <h2>Find a Location</h2>
+                        <p>Quality healthcare close to you!</p>
+                        <a href="#">
+                            <div class="cardBtn">
+                                <img src="img/next.png" alt="" class="cardIcon">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card three" data-aos="fade-up" data-aos-duration="1600">
+                    <img src="img/videocall.png" class="cardthreeImg" alt="" data-aos="fade-up" data-aos-duration="1300">
+                    <div class="cardbgone"></div>
+                    <div class="cardContent">
+                        <h2>Nutrition Services</h2>
+                        <p>Personalized nutrition for all stages of life !</p>
+                        <a href="#">
+                            <div class="cardBtn">
+                                <img src="img/next.png" alt="" class="cardIcon">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- BANNER AND FOOTER -->
+
+        <div class="banner">
+            <div class="bannerText" data-aos="fade-right" data-aos-duration="1000">
+                <h1>Download the HealthCare App Today. <br> <span style="font-size:1.6vw;font-weight:normal"  class="bannerInnerText">
+                    Stay Updated and get all your medical needs taken care of!
+                </span> </h1>
+                <a href="#"> <img src="img/AndroidPNG.png" alt=""> </a>
+                <a href="#"> <img src="img/iosPNG.png" alt=""> </a>
+            </div>
+            <div class="bannerImg" data-aos="fade-up" data-aos-duration="1000">
+                <img src="img/MobileApp.png" alt="">
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2>ForYourinformation</h2>
+            <div class="footerlinks">
+                <a href="#" class="mainlink">Corona Updates</a>
+                <a href="#">Help</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+            AOS.init();
+    </script>
+
+<script>
+    function toggleForm() {
+        var form = document.getElementById("myForm");
+        if (form.style.display === "none") {
+            form.style.display = "block";
+        } else {
+            form.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
